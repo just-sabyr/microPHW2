@@ -7,10 +7,11 @@ STCVR    EQU 0xE000E018
 ;---------------------------
 ; Vector Table
 ;---------------------------
-	EXTERN __stack_top				; import from .sct
+	EXTERN __STACK_TOP				; import from .sct
 
     AREA RESET, DATA, READONLY
-    DCD __stack_top                 ; Stack pointer (defined in the linker script)
+	ALIGN 4
+    DCD __STACK_TOP                 ; Stack pointer (defined in the linker script)
     DCD Reset_Handler               ; Reset handler
     DCD SysTick_Handler             ; SysTick handler
 
