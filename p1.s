@@ -8,7 +8,7 @@ STCVR    EQU 0xE000E018
 ; Vector Table
 ;---------------------------
     AREA RESET, DATA, READONLY
-    DCD __initial_sp                ; Stack pointer (define this in the linker script)
+    DCD __STACK_TOP                 ; Stack pointer (defined in the linker script)
     DCD Reset_Handler               ; Reset handler
     DCD SysTick_Handler             ; SysTick handler
 
