@@ -53,8 +53,6 @@
 #define __RW_BASE       __RAM_BASE
 #define __RW_SIZE      (__RAM_SIZE - __STACK_SIZE - __HEAP_SIZE)
 
-#define __initial_sp    __STACK_TOP             ; Initial Stack Pointer
-
 
 LR_ROM __RO_BASE __RO_SIZE  {                       ; load region size_region
   ER_ROM __RO_BASE __RO_SIZE  {                     ; load address = execution address
