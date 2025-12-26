@@ -7,6 +7,8 @@ STCVR    EQU 0xE000E018
 ;---------------------------
 ; Vector Table
 ;---------------------------
+	EXTERN __STACK_TOP				; import from .sct
+
     AREA RESET, DATA, READONLY
     DCD __STACK_TOP                 ; Stack pointer (defined in the linker script)
     DCD Reset_Handler               ; Reset handler
