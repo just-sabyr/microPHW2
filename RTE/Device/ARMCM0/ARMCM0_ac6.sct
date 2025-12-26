@@ -64,7 +64,7 @@ LR_ROM __RO_BASE __RO_SIZE  {
     *(.bss.noinit)
   }
 
-  RW_RAM AlignExpr(+0, 8) (__RW_SIZE - AlignExpr(ImageLength(RW_NOINIT), 8)) {
+  RW_RAM AlignExpr(+0, 8) __RW_SIZE {
     *(+RW +ZI)
   }
 
