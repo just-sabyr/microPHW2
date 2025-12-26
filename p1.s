@@ -1,7 +1,7 @@
 ; Define Register Addresses - for SysTick Handler Interupt correct setup
-    STCTRL   EQU 0xE000E010
-    STRELOAD EQU 0xE000E014
-    STCVR    EQU 0xE000E018
+STCTRL   EQU 0xE000E010
+STRELOAD EQU 0xE000E014
+STCVR    EQU 0xE000E018
 
 
 ;---------------------------

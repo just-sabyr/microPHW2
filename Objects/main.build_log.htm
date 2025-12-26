@@ -1,0 +1,86 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.43.1.0
+Copyright (C) 2025 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: sabyr baz, itu, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.43.0.0
+Toolchain Path:  C:\Users\bazar\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.24
+Assembler:       Armasm.exe V6.24
+Linker/Locator:  ArmLink.exe V6.24
+Library Manager: ArmAr.exe V6.24
+Hex Converter:   FromElf.exe V6.24
+CPU DLL:         SARMCM3.DLL V5.43.0.0
+Dialog DLL:      DARMCM1.DLL V1.19.6.0
+Target DLL:      UL2CM3.DLL V1.164.16.0
+Dialog DLL:      TARMCM1.DLL V1.14.6.0
+ 
+<h2>Project:</h2>
+C:\Users\bazar\Documents\micro_p_systems\hw2\main.uvprojx
+Project File Date:  12/26/2025
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.24', folder: 'C:\Users\bazar\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'Target_1'
+"p1.s", line 11 (column 9): Error: A1516E: Bad symbol '__initial_sp', not defined or external
+   11 00000000     DCD __initial_sp                ; Stack pointer (define this in the linker script)
+                       ^
+"p1.s", line 75: Warning: A1581W: Added 2 bytes of padding at address 0x26
+   75 00000028     AREA myData, DATA, READONLY ; Define a read only data section
+"p1.s", line 82: Warning: A1581W: Added 3 bytes of padding at address 0x9
+   82 0000000c vari DCD 0
+1 Error, 2 Warnings
+assembling p1.s...
+linking...
+.\Objects\main.axf: error: L6002U: Could not open file .\objects\p1.o: No such file or directory
+Not enough information to list image symbols.
+Not enough information to list load addresses in the image map.
+Finished: 2 information, 0 warning, 0 error and 1 fatal error messages.
+".\Objects\main.axf" - 1 Error(s), 0 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.CMSIS.6.2.0.pack
+                ARM::CMSIS@6.2.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 6.1.1
+   * Component: SysTick Version: 1.0.5
+   * Component: OS Tick Version: 1.0.1
+
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.Cortex_DFP.1.1.0.pack
+                ARM::Cortex_DFP@1.1.0
+                ARM Cortex Reference Subsystems Device Family Pack
+   * Component: Startup Variant: C Startup Version: 2.2.0
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_Target_1
+  C:/Users/bazar/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include
+  C:/Users/bazar/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/RTOS2/Include
+  C:/Users/bazar/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARMCM0/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE@6.1.1
+
+   * Component: ARM::CMSIS:OS Tick:SysTick@1.0.5
+      Source file:   CMSIS/RTOS2/Source/os_systick.c
+
+   * Component: ARM::Device:Startup&C Startup@2.2.0
+      Include file:  Device/ARMCM0/Include/ARMCM0.h
+      Source file:   Device/ARMCM0/Source/startup_ARMCM0.c
+      Source file:   Device/ARMCM0/Source/system_ARMCM0.c
+
+   * Component: CMSIS:OS Tick(API)@1.0.1
+      Include file:  CMSIS/RTOS2/Include/os_tick.h
+Target not created.
+Build Time Elapsed:  00:00:00
+</pre>
+</body>
+</html>
